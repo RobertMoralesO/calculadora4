@@ -1,18 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+	<TextView
+		android:id="@+id/lblTitulo"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/titulo_calculadora"
+		android:textAlignment="center"
+		android:textSize="18sp"
+		android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+	<EditText
+		android:id="@+id/txtNumeroUno"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:hint="@string/numero_uno"
+		android:inputType="numberDecimal" />
+
+	<EditText
+		android:id="@+id/txtNumeroDos"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:hint="@string/numero_dos"
+		android:inputType="numberDecimal" />
+
+	<Spinner
+		android:id="@+id/cmbOperaciones"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btnCalcular"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/calcular" />
+
+		<Button
+			android:id="@+id/btnBorrar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/borrar" />
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/lblResultado"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="TextView" />
+
+</LinearLayout>
