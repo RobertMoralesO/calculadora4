@@ -9,6 +9,9 @@
 	<string name="restar">Restar</string>
 	<string name="multiplicar">Multiplicar</string>
 	<string name="dividir">Dividir</string>
+	<string name="error_numero_uno">Digite el número uno</string>
+	<string name="error_numero_dos">Digite el número dos</string>
+	<string name="error_division_cero">No se puede dividir por cero</string>
 
 	<string-array name="operaciones">
 		<item>@string/sumar</item>

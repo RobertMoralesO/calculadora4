@@ -3,9 +3,9 @@
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
+	android:layout_height="wrap_content"
 	android:orientation="vertical"
-	tools:context=".MainActivity" >
+	tools:context=".MainActivity">
 
 	<TextView
 		android:id="@+id/lblTitulo"
@@ -35,11 +35,11 @@
 	<Spinner
 		android:id="@+id/cmbOperaciones"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content" />
+		android:layout_height="match_parent" />
 
 	<LinearLayout
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
+		android:layout_height="wrap_content"
 		android:orientation="horizontal">
 
 		<Button
@@ -47,6 +47,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
+			android:onClick="calcular"
 			android:text="@string/calcular" />
 
 		<Button
@@ -54,6 +55,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
+			android:onClick="borrar"
 			android:text="@string/borrar" />
 	</LinearLayout>
 
@@ -61,6 +63,8 @@
 		android:id="@+id/lblResultado"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:text="TextView" />
+		android:textAlignment="center"
+		android:textSize="18sp"
+		android:textStyle="bold" />
 
 </LinearLayout>

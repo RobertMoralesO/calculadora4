@@ -10,4 +10,7 @@
 	<string name="restar">Subtraction</string>
 	<string name="multiplicar">Multiplication</string>
 	<string name="dividir">Division</string>
+	<string name="error_numero_uno">Type Number One</string>
+	<string name="error_numero_dos">Type Number Two</string>
+	<string name="error_division_cero">Can\'t Division by Zero</string>
 </resources>
